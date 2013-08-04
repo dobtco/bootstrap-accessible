@@ -1267,8 +1267,10 @@ For example, <code>&lt;section&gt;</code> should be wrapped as inline.
       <p>Inputs, selects, and textareas are 100% wide by default in Bootstrap. To use the inline form, you'll have to set a width on the form controls used within.</p>
     </div>
     <form class="bs-example form-inline">
-      <input type="text" class="form-control" placeholder="Email">
-      <input type="password" class="form-control" placeholder="Password">
+      <label class="visually-hidden" for="exampleInputEmail">Email address</label>
+      <input type="text" class="form-control" id="exampleInputEmail" placeholder="Enter email">
+      <label class="visually-hidden" for="exampleInputPassword">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword" placeholder="Password">
       <div class="checkbox">
         <label>
           <input type="checkbox"> Remember me
@@ -1278,8 +1280,10 @@ For example, <code>&lt;section&gt;</code> should be wrapped as inline.
     </form><!-- /example -->
 {% highlight html %}
 <form class="form-inline">
-  <input type="text" class="form-control" placeholder="Email">
-  <input type="password" class="form-control" placeholder="Password">
+  <label class="visually-hidden" for="exampleInputEmail">Email address</label>
+  <input type="text" class="form-control" id="exampleInputEmail" placeholder="Enter email">
+  <label class="visually-hidden" for="exampleInputPassword">Password</label>
+  <input type="password" class="form-control" id="exampleInputPassword" placeholder="Password">
   <div class="checkbox">
     <label>
       <input type="checkbox"> Remember me
@@ -1506,8 +1510,10 @@ For example, <code>&lt;section&gt;</code> should be wrapped as inline.
 
     <form class="bs-example form-inline">
       <fieldset disabled>
-        <input type="text" class="form-control" placeholder="Disabled input">
-        <select class="form-control">
+        <label class="visually-hidden" for="exampleDisabledInputText">Disabled input</label>
+        <input type="text" class="form-control" placeholder="Disabled input" id="exampleDisabledInputText">
+        <label class="visually-hidden" for="exampleDisabledSelect">Disabled select</label>
+        <select class="form-control" id="exampleDisabledSelect">
           <option>Disabled select</option>
         </select>
         <div class="checkbox">
@@ -1521,8 +1527,10 @@ For example, <code>&lt;section&gt;</code> should be wrapped as inline.
 {% highlight html %}
 <form class="form-inline">
   <fieldset disabled>
-    <input type="text" class="form-control" placeholder="Disabled input">
-    <select class="form-control">
+    <label class="visually-hidden" for="exampleDisabledInputText">Disabled input</label>
+    <input type="text" class="form-control" placeholder="Disabled input" id="exampleDisabledInputText">
+    <label class="visually-hidden" for="exampleDisabledSelect">Disabled select</label>
+    <select class="form-control" id="exampleDisabledSelect">
       <option>Disabled select</option>
     </select>
     <div class="checkbox">
