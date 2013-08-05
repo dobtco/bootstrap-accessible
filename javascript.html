@@ -192,28 +192,42 @@ $('#myModal').on('show.bs.modal', function (e) {
       <a data-toggle="modal" href="#myModal" class="btn btn-primary btn-large">Launch demo modal</a>
     </div><!-- /example -->
 {% highlight html %}
-  <!-- Button trigger modal -->
-  <a data-toggle="modal" href="#myModal" class="btn btn-primary btn-large">Launch demo modal</a>
+<!-- Button trigger modal -->
+<a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Launch demo modal</a>
 
-  <!-- Modal -->
-  <div class="modal fade" id="myModal">
+<!-- Modal -->
+<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-          <h4 class="modal-title">Modal title</h4>
-        </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <a href="#" class="btn">Close</a>
-          <a href="#" class="btn btn-primary">Save changes</a>
-        </div>
-      </div><!-- /.modal-content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 id="myModalLabel" class="modal-title">Modal title</h4>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="btn">Close</a>
+                <a href="#" class="btn btn-primary">Save changes</a>
+            </div>
+        </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
-  </div><!-- /.modal -->
+</div><!-- /.modal -->
 {% endhighlight %}
+
+
+    <div class="bs-callout bs-callout-warning">
+        <h4>Make modals accessible</h4>
+        <p>Be sure to add <code>role="dialog"</code> to your primary modal div. In the example above,
+            <code>div#myModal</code>.  Also, <code>aria-labelledby</code> references your modal title.
+            In this example,<code>h4#myModalLabel</code>.  Finally, <code>aria-hidden="true"</code> tells assistive technologies to skip DOM elements.
+            Additionally, you may have description of your modal dialog.  Use <code>aria-describedby</code> in the primary modal div to point to this description (this is not shown in the above example).</p>
+    </div>
+
+    <div class="bs-callout bs-callout-danger">
+        <h4>Section 508 compliance: nesting headers</h4>
+        <p>The above example does not comply with Section 508 rules for nested headers. H1 must always be the first header, followed in logical order by H2, H3, etc without skipping. <a href="http://manual.cms.unr.edu/accessibility/use-headings-in-order" alt="Reference for Section 508 heading order" target="_blank">See Reference</a></p>
+    </div>
 
     <h2 id="modals-usage">Usage</h2>
 
