@@ -192,34 +192,11 @@ $('#myModal').on('show.bs.modal', function (e) {
       <a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Launch demo modal</a>
     </div><!-- /example -->
 {% highlight html %}
-<<<<<<< HEAD
-<!-- Button trigger modal -->
-<a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Launch demo modal</a>
-
-<!-- Modal -->
-<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 id="myModalLabel" class="modal-title">Modal title</h4>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <a href="#" class="btn">Close</a>
-        <a href="#" class="btn btn-primary">Save changes</a>
-      </div>
-    </div><!-- /.modal-content -->
-  </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
-=======
   <!-- Button trigger modal -->
   <a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Launch demo modal</a>
 
   <!-- Modal -->
-  <div class="modal fade" id="myModal">
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -236,7 +213,6 @@ $('#myModal').on('show.bs.modal', function (e) {
       </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
   </div><!-- /.modal -->
->>>>>>> upstream/3.0.0-wip
 {% endhighlight %}
 
 
