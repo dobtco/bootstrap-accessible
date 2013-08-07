@@ -542,7 +542,7 @@ $('.dropdown-toggle').dropdown()
     <h3>Via JavaScript</h3>
     <p>Call the scrollspy via JavaScript:</p>
 {% highlight js %}
-$('#navbar-example').scrollspy(options)
+$('body').scrollspy({ target: '#navbar-example' })
 {% endhighlight %}
 
     <div class="bs-callout bs-callout-danger">
@@ -974,16 +974,16 @@ $('#myTooltip').on('hidden.bs.tooltip', function () {
     <h4>Four directions</h4>
     <div class="bs-example tooltip-demo">
       <div class="bs-example-tooltips">
-        <button type="button" class="btn btn-default" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+        <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
           Popover on left
         </button>
-        <button type="button" class="btn btn-default" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+        <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
           Popover on top
         </button>
-        <button type="button" class="btn btn-default" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+        <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
           Popover on bottom
         </button>
-        <button type="button" class="btn btn-default" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+        <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
           Popover on right
         </button>
       </div>
@@ -1682,6 +1682,10 @@ $('#myCollapsible').on('hidden.bs.collapse', function () {
 </div>
 {% endhighlight %}
 
+<div class="bs-callout bs-callout-danger">
+  <h4>Accessibility issue</h4>
+  <p>The carousel component is generally not compliant with accessibility standards. If you need to be compliant, please consider other options for presenting your content.</p>
+</div>
 
     <h2 id="carousel-usage">Usage</h2>
 
